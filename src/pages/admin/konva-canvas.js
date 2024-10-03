@@ -159,8 +159,15 @@ const KonvaCanvas = () => {
   };
 
   const handleSaveModalButtonClick = () => {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key === saveName) {
+        alert('This same name is existed in localstorage!')
+        return
+      }
+    }
     const data = JSON.stringify({
-      image: image,
+      image: imageFile,
       rectangles: rectangles
     });
     localStorage.setItem(saveName, data);

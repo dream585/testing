@@ -143,3 +143,46 @@ body {
 .list-item:hover {
   background-color: #e0f7fa; /* Background color on hover */
 }
+
+.left-bar {
+  width: 20vw;
+  height: 100vh;
+  border-right: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: #f7f7f7;
+}
+
+.day-map-container {
+  width: 80vw;
+  height: 100vh;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: relative;
+}
+
+.name {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: lightblue;
+  cursor: grab;
+}
+
+.legend-container{
+  padding: 8px;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.legend{
+  overflow-wrap: break-word;
+  padding: 9px;
+  background: white;
+  border-radius: 5px;
+}
